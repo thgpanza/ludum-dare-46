@@ -1,4 +1,4 @@
-/// @description Drawing the turret's range
+/// @description Drawing the Turret's Range
 
 // Drawing the range as long as the mouse is hovering the turret.
 halfSpriteWidth = sprite_width / 2;

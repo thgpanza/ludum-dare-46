@@ -1,5 +1,6 @@
-/// @description Handling UI
+/// @description Handling the UI
 
+// Setting the draw color to white.
 draw_set_color(c_white);
 
 // Drawing the amount of corns owned by the player to the screen.

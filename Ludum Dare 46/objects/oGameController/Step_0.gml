@@ -1,13 +1,19 @@
 /// @description Game Controller
 
-// Initializing local variables.
+/* INITIALIZING LOCAL VARIABLES */
+
 var kbBuildingModeKey = keyboard_check_pressed(ord("B"));
 var kbBasicTowerKey = keyboard_check_pressed(ord("1"));
 var kbBuildKey = mouse_check_button_pressed(mb_left);
 var kbSellKey = mouse_check_button_pressed(mb_right);
 
-// Entering building mode.
+
+/* ACTUAL GAME CONTROLLING */
+
+#region BUILDING MODE
+
 if (kbBuildingModeKey) {
+	// Entering/Exiting building mode.
 	if (buildingMode == false) {
 		buildingMode = true;
 		
@@ -16,6 +22,7 @@ if (kbBuildingModeKey) {
 		var mouseYgridPos = int64(mouse_y/64) * 64;
 		
 		buildingMark = instance_create_layer(mouseXgridPos, mouseYgridPos, "UILayer", oBuildingMark);
+	
 	} else {
 		buildingMode = false;
 		
@@ -88,7 +95,11 @@ if (buildingMode) {
 	}
 }
 
-// Game Over Code
+#endregion
+
+
+/* GAME OVER CODE */
+
 if (global.playerHp <= 0) {
 	game_end();
 }

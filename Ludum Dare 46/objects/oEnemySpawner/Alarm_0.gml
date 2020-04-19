@@ -1,5 +1,10 @@
-/// @description Spawn Small Enemy
+/// @description Small Enemy Spawner
 
-instance_create_layer(-64, -64, "SmallEnemiesLayer", oSmallEnemy);
+// Spawning one small enemy.
+instance_create_layer(-(global.halfTileWidth * 4),
+					  -(global.halfTileHeight * 4),
+					  "SmallEnemiesLayer",
+					  oSmallEnemy);
 
-alarm[0] = room_speed;
+// Resetting the alarm.
+alarm[0] = alarm0cd;

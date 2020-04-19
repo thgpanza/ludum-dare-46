@@ -8,7 +8,7 @@
         "fe37f58f-5f42-483b-8e46-af47e43db2ba"
     ],
     "filterType": "GMScript",
-    "folderName": "UtilityScripts",
+    "folderName": "Utility Scripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

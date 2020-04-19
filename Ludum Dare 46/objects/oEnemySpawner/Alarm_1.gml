@@ -1,5 +1,10 @@
-/// @description Spawn Big Enemy
+/// @description Big Enemy Spawner
 
-instance_create_layer(-64, -64, "BigEnemiesLayer", oBigEnemy);
+// Spawning one big enemy.
+instance_create_layer(-(global.halfTileWidth * 4),
+					  -(global.halfTileHeight * 4),
+					  "BigEnemiesLayer",
+					  oBigEnemy);
 
-alarm[1] = room_speed * 2;
+// Resetting the alarm.
+alarm[1] = alarm1cd;

@@ -1,13 +1,13 @@
 /// @description Re-positioning
 
-// Handling the X Position
+// Handling the X position.
 if (mouse_x < lastXpoint) {
 	x = int64(mouse_x/64) * 64;
 } else {
 	x = int64(lastXpoint/64) * 64;
 }
 
-// Handling the Y Position
+// Handling the Y position.
 if (mouse_y < lastYpoint) {
 	y = int64(mouse_y/64) * 64;
 } else {
