@@ -4,6 +4,4 @@
 
 global.playerHp -= argument0;
 
-show_debug_message(global.playerHp);
-
 instance_destroy();

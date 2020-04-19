@@ -1,8 +1,9 @@
 /// @description Variable Initialization
 
-myHp     = 6;
-myDamage = 2;
-mySpeed  = 48;
+hp        =  8;
+damage    =  2;
+moveSpeed =  1;
+cornValue = 50;
 
 // Calling the "follow path" command.
 event_inherited();

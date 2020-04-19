@@ -1,8 +1,9 @@
 /// @description Variable Initialization
 
-myHp     = 3;
-myDamage = 1;
-mySpeed  = 64;
+hp        =  4;
+damage    =  1;
+moveSpeed =  1.5;
+cornValue = 25;
 
 
 // Calling the "follow path" command.
