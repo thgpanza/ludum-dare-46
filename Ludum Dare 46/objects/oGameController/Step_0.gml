@@ -12,6 +12,8 @@ var kbSellKey = mouse_check_button_pressed(mb_right);
 
 #region BUILDING MODE
 
+/* BUILDING MODE ACTIVATION/DEACTIVATION */
+
 if (kbBuildingModeKey) {
 	// Entering/Exiting building mode.
 	if (buildingMode == false) {
@@ -30,13 +32,10 @@ if (kbBuildingModeKey) {
 	}
 }
 
-// Building mode controller.
+
+/* BUILDING MODE CONTROLLER */
+
 if (buildingMode) {
-	// Deactivating the "shop" layer.
-	if (layer_get_visible("TempUILayer")) {
-		layer_set_visible("TempUILayer", false);
-	}
-	
 	// Choosing which tower to build.
 	if (kbBasicTowerKey) {
 		towerToBuild = oBasicTower;		
@@ -50,9 +49,11 @@ if (buildingMode) {
 		var xPosToCheck = mouseXgridPos + global.halfTileWidth;
 		var yPosToCheck = mouseYgridPos + global.halfTileHeight;
 		
-		if (!instance_position(xPosToCheck, yPosToCheck, oTower)) {
+		if (!instance_position(xPosToCheck, yPosToCheck, oTower) &&
+			!instance_position(xPosToCheck, yPosToCheck, oSoilPath)) {
 			if (towerToBuild != noone) {
 				var towersMapIndex = -1;
+				
 				switch (towerToBuild) {
 					case oBasicTower:
 						towersMapIndex = 0;
@@ -66,6 +67,7 @@ if (buildingMode) {
 				if ((global.playerCornsOwned - towerMap[? "Price"]) >= 0) {
 					global.playerCornsOwned -= towerMap[? "Price"];
 					
+					instance_create_layer(xPosToCheck, yPosToCheck, "ExCornfieldLayer", oExCornfield);
 					instance_create_layer(xPosToCheck, yPosToCheck, "TowersLayer", towerToBuild);
 				}
 			}
@@ -87,11 +89,6 @@ if (buildingMode) {
 			
 			instance_destroy(instanceFound);
 		}
-	}
-} else {
-	// Reactivating the "shop" layer.
-	if (!layer_get_visible("TempUILayer")) {
-		layer_set_visible("TempUILayer", true);
 	}
 }
 

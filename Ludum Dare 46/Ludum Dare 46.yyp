@@ -50,7 +50,7 @@
             "Key": "24a21957-b43f-4dec-858e-f63e511082e5",
             "Value": {
                 "id": "da5af91f-e6ea-4d72-9ccd-981ec802cf8c",
-                "resourcePath": "sprites\\sSoil\\sSoil.yy",
+                "resourcePath": "sprites\\sSoilPath\\sSoilPath.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -100,6 +100,14 @@
                 "id": "1b93f1a5-f159-487d-8b06-26a0a0432506",
                 "resourcePath": "scripts\\EnemyInitializer\\EnemyInitializer.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3f949767-30ae-4c13-831b-0e00624a71b4",
+            "Value": {
+                "id": "1a26bde6-540d-485e-9da1-4277fef908ee",
+                "resourcePath": "objects\\oTempShopUI\\oTempShopUI.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -375,6 +383,14 @@
             }
         },
         {
+            "Key": "aca5def3-ba9c-4a92-9265-e9a883f9e3ff",
+            "Value": {
+                "id": "21e88216-c0bb-4569-9bdf-a62b39222e21",
+                "resourcePath": "sprites\\sExCornfield\\sExCornfield.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b777b503-607b-426d-a564-ee34385652bf",
             "Value": {
                 "id": "53152f90-9a69-4706-85d7-6c6b64b6b256",
@@ -447,11 +463,27 @@
             }
         },
         {
+            "Key": "dacd0577-e55a-4b1b-8330-a6799b870f69",
+            "Value": {
+                "id": "2d0c2b41-95c3-4abb-ab81-cc481e25aa47",
+                "resourcePath": "objects\\oSoilPath\\oSoilPath.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "373b4487-fcd1-489f-aaf0-4ab9468ad047",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e54f03fa-ce46-4a52-878f-45b8b3810144",
+            "Value": {
+                "id": "0d7337fd-f5cf-4646-9cd2-2855198ba4d3",
+                "resourcePath": "objects\\oExCornfield\\oExCornfield.yy",
+                "resourceType": "GMObject"
             }
         },
         {
