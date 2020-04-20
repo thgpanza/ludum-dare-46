@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0f462a35-6fed-4cca-9bb3-1d2d321e73cf",
+            "Value": {
+                "id": "93b1efa3-2d3b-4762-ae96-7530c61eae94",
+                "resourcePath": "sprites\\sFarmGroundTile\\sFarmGroundTile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "178e77c2-e7f8-45f2-bfa5-9e142d3833a0",
             "Value": {
                 "id": "3cf675db-4403-4b7e-b5d7-ccdd107798b0",
@@ -98,7 +106,7 @@
             "Key": "382e80e8-3443-4563-b2ad-3a7295bd1100",
             "Value": {
                 "id": "1b93f1a5-f159-487d-8b06-26a0a0432506",
-                "resourcePath": "scripts\\EnemyInitializer\\EnemyInitializer.yy",
+                "resourcePath": "scripts\\UpdateEnemy\\UpdateEnemy.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "e361e05f-5bd6-4a70-89eb-a09b32d88835",
+            "Value": {
+                "id": "4204220f-eb6a-4407-a41f-a6776a93cf30",
+                "resourcePath": "rooms\\rDaylightZone\\rDaylightZone.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "373b4487-fcd1-489f-aaf0-4ab9468ad047",
@@ -538,9 +554,9 @@
     "script_order": [
         "178e77c2-e7f8-45f2-bfa5-9e142d3833a0",
         "fe37f58f-5f42-483b-8e46-af47e43db2ba",
+        "93569358-b482-45fe-a43b-19151a2e443c",
         "382e80e8-3443-4563-b2ad-3a7295bd1100",
-        "51d3e25b-4de0-432e-aa58-f5b300c001e9",
-        "93569358-b482-45fe-a43b-19151a2e443c"
+        "51d3e25b-4de0-432e-aa58-f5b300c001e9"
     ],
     "tutorial": ""
 }

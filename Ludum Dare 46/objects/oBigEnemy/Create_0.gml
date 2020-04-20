@@ -1,10 +1,7 @@
 /// @description Variable Initialization
 
-// The enemy's index.
-enemiesMapIndex = 1;
-
 // Initializing the enemy's variables.
-EnemyInitializer(enemiesMapIndex);
+UpdateEnemy(oGameController.bigEnemyMapIndex);
 
 // Calling the "follow path" command.
 event_inherited();

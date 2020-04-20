@@ -13,7 +13,8 @@
         "92aa0652-c137-4060-bd0d-150092ab8a6a",
         "26a76b9d-96d9-4632-86df-6982bf664bd3",
         "24cbc4c1-617a-47b7-9625-bd20c9862e54",
-        "2c14d4df-bf02-42bc-8cdc-a6b0673e6591"
+        "2c14d4df-bf02-42bc-8cdc-a6b0673e6591",
+        "0f462a35-6fed-4cca-9bb3-1d2d321e73cf"
     ],
     "filterType": "GMSprite",
     "folderName": "Temp",
