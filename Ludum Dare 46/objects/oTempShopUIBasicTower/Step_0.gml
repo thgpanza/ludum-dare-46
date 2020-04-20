@@ -2,12 +2,12 @@
 
 // Hiding the shop UI while hovering it (to more easily see the space/towers beneath it).
 if (mouse_x <= 192 && mouse_y <= 128) {
-	if (layer_get_visible("TempUILayer")) {
-		layer_set_visible("TempUILayer", false);
+	if (image_alpha = 1) {
+		image_alpha = 0;
 	}
 } else {
-	if (!layer_get_visible("TempUILayer")) {
-		layer_set_visible("TempUILayer", true);
+	if (image_alpha = 0) {
+		image_alpha = 1;
 	}
 }
 

@@ -2,7 +2,7 @@
     "id": "3f949767-30ae-4c13-831b-0e00624a71b4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oTempShopUI",
+    "name": "oTempShopUIBasicTower",
     "eventList": [
         {
             "id": "7416fec1-9ce1-4505-8b9f-dc0cb03610bf",

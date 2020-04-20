@@ -111,10 +111,18 @@
             }
         },
         {
+            "Key": "3ece274e-4694-49ed-912f-f75b2c444537",
+            "Value": {
+                "id": "d3946680-1518-46bd-bf97-1585c385d556",
+                "resourcePath": "sprites\\sUIShopBuildingMode\\sUIShopBuildingMode.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f949767-30ae-4c13-831b-0e00624a71b4",
             "Value": {
                 "id": "1a26bde6-540d-485e-9da1-4277fef908ee",
-                "resourcePath": "objects\\oTempShopUI\\oTempShopUI.yy",
+                "resourcePath": "objects\\oTempShopUIBasicTower\\oTempShopUIBasicTower.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -316,6 +324,14 @@
                 "id": "28ad67f7-6c93-4c15-8582-337c8b1fc1bc",
                 "resourcePath": "views\\8e40571e-da85-4023-9e0d-6252780e9906.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8f5449db-5106-442e-b1b4-a3015449064c",
+            "Value": {
+                "id": "87283f17-4a92-4fc0-b1f5-a528a00c43ea",
+                "resourcePath": "objects\\oTempShopUIBuildingMode\\oTempShopUIBuildingMode.yy",
+                "resourceType": "GMObject"
             }
         },
         {
