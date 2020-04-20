@@ -12,14 +12,14 @@ if (mouse_x <= 192 && mouse_y <= 128) {
 }
 
 // Showing which tower is selected to be built.
-if (oGameController.towerToBuild == noone || !global.isOnBuildingMode) {
+if (global.towerToBuild == noone || !global.isOnBuildingMode) {
 	image_alpha = 0.75;
 	
-	if (oGameController.towerToBuild != noone) {
-		oGameController.towerToBuild = noone;
+	if (global.towerToBuild != noone) {
+		global.towerToBuild = noone;
 	}
 } else {
-	if (oGameController.towerToBuild == oBasicTower) {	
+	if (global.towerToBuild == oBasicTower) {	
 		image_alpha = 1;
 	}
 }

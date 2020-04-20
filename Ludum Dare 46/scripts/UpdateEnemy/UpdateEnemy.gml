@@ -1,7 +1,7 @@
 /// @description EnemyInitializer(enemiesMapIndex)
 /// @param enemiesMapIndex
 
-var enemyMap = oGameController.enemies[argument0];
+var enemyMap = oGameManager.enemies[argument0];
 
 // The enemy's stats.
 hp        = enemyMap[? "Hit Points"]; // How many corns the tower costs.

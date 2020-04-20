@@ -43,7 +43,7 @@ if (room == rNightZone) {
 	if (global.isOnBuildingMode) {
 		// Choosing which tower to build.
 		if (kbBasicTowerKey) {
-			towerToBuild = oBasicTower;		
+			global.towerToBuild = oBasicTower;		
 		}
 	
 		// Building the tower at the mouse's position.
@@ -56,10 +56,10 @@ if (room == rNightZone) {
 		
 			if (!instance_position(xPosToCheck, yPosToCheck, oTower) &&
 				!instance_position(xPosToCheck, yPosToCheck, oSoilPath)) {
-				if (towerToBuild != noone) {
+				if (global.towerToBuild != noone) {
 					var towersMapIndex = -1;
 				
-					switch (towerToBuild) {
+					switch (global.towerToBuild) {
 						case oBasicTower:
 							towersMapIndex = 0;
 							break;
@@ -78,7 +78,7 @@ if (room == rNightZone) {
 							instance_create_layer(xPosToCheck, yPosToCheck, "ExCornfieldLayer", oExCornfield);
 						}
 					
-						instance_create_layer(xPosToCheck, yPosToCheck, "TowersLayer", towerToBuild);
+						instance_create_layer(xPosToCheck, yPosToCheck, "TowersLayer", global.towerToBuild);
 					}
 				}
 			}
@@ -112,6 +112,7 @@ if (room == rNightZone || room == rDaylightZone) {
 	}
 }
 
+// Changing to "rDaylightZone" every 5 turns.
 if (room == rNightZone && global.endNight) {
 	global.endNight = false;
 	

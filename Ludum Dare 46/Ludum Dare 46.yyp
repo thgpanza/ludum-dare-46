@@ -210,7 +210,7 @@
             "Key": "67552284-6148-4ca4-9ceb-937fc34f3855",
             "Value": {
                 "id": "cf0a2ea4-355a-4d58-b8a5-3793a7e07c39",
-                "resourcePath": "objects\\oGameController\\oGameController.yy",
+                "resourcePath": "objects\\oGameManager\\oGameManager.yy",
                 "resourceType": "GMObject"
             }
         },

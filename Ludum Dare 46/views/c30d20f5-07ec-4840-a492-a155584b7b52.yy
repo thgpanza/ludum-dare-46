@@ -8,7 +8,7 @@
         "c6943750-379b-4bae-b64c-27e121f843c6"
     ],
     "filterType": "GMObject",
-    "folderName": "Controller Objects",
+    "folderName": "Control Objects",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

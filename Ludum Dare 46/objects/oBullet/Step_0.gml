@@ -4,7 +4,7 @@
 var trueSpeed = GetDeltaTime(ownedTowerMap[? "Bullet Speed"]);
 speed = trueSpeed;
 
-// Checking if the bullet is outside the screen and destroying it.
-if (x < 0 || x > room_width || y < 0 || y > room_height) {
+// Checking if the bullet is outside the range of it's tower.
+if (point_distance(x, y, ownedTower.x, ownedTower.y) > ownedTower.range) {
 	instance_destroy();
 }

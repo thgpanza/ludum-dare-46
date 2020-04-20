@@ -1,7 +1,7 @@
 /// @description Chance(towersMapIndex)
 /// @param towersMapIndex
 
-var towerMap = oGameController.towers[argument0];
+var towerMap = oGameManager.towers[argument0];
 
 // The tower's stats.
 name        = towerMap[? "Name"];         // The tower's name.
@@ -13,5 +13,5 @@ bulletSpeed = towerMap[? "Bullet Speed"]; // How fast the tower's bullet will tr
 range       = towerMap[? "Range"];        // How far the tower can shoot (in pixels).
 
 // The tower's control variables.
-isShooting  = false;                      // Wheter the tower is shooting or not.
+isShooting  = false;                      // Whether the tower is shooting or not.
 target      = noone;                      // The tower's current target.

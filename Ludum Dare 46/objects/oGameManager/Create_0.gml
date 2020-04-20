@@ -12,16 +12,16 @@ global.playerCornsOwned        =  150; // The amount of corns that the player ow
 global.playerSellRefundPercent = 0.25; // The percentage of the tower's value the player receives back after selling it.
 
 // Tower defense mode variables.
-global.turn             = 0;           // 
-global.canStartNextTurn = true;        // 
-global.endNight         = false;       // 
+global.turn             = 0;           // The turn that the player is currently in.
+global.canStartNextTurn = true;        // Controls whether the enemy spawner can send the next wave or not.
 global.isOnBuildingMode = false;       // The variable that activates the turret building mode.
+global.towerToBuild     = noone;       // The tower to build when using "building mode".
+global.endNight         = false;       // Controls whether the game manager can change to the daylight room;
 
 
-/* CONTROLLER VARIABLES */
+/* CONTROL VARIABLES */
 
-towerToBuild = noone;                  // The tower to build when using "building mode".
-buildingMark = noone;                  // 
+buildingMark = noone;                  // Building mark instance holder.
 
 
 /* DS_MAP DATABASES */
