@@ -1,8 +1,10 @@
 /// @description Handling the UI
 
+#region NIGHT ZONE UI
+
 if (room = rNightZone) {
-	var cornsTextX = (room_width / 2) - 50;
-	var cornsTextY = 32;
+	var cornsTextBackgroundX = (room_width / 2) - (global.halfTileWidth * 2);
+	var cornsTextBackgroundY = global.halfTileWidth;
 
 	var hpTextX = 36;
 	var hpTextY = room_height - 32;
@@ -13,10 +15,10 @@ if (room = rNightZone) {
 	// Drawing the amount of corns owned by the player to the screen.
 	draw_set_color(c_black);
 	draw_set_alpha(0.4);
-	draw_rectangle(cornsTextX - 16, cornsTextY - 4, cornsTextX + 114, cornsTextY + 24, false);
+	draw_rectangle(cornsTextBackgroundX, cornsTextBackgroundY - 4, cornsTextBackgroundX + (global.halfTileWidth * 4), cornsTextBackgroundY + 24, false);
 	draw_set_color(c_white);
 	draw_set_alpha(1);
-	draw_text(cornsTextX, cornsTextY, "Corns: " + string(global.playerCornsOwned));
+	draw_text(cornsTextBackgroundX + 8, cornsTextBackgroundY, "Corns: " + string(global.playerCornsOwned));
 
 	// Drawing the player's remaining health to the screen.
 	draw_set_color(c_black);
@@ -34,3 +36,22 @@ if (room = rNightZone) {
 	draw_set_alpha(1);
 	draw_text(turnTextX, turnTextY, "Turn: " + string(global.turn));
 }
+
+#endregion
+
+#region DAYLIGHT ZONE UI
+
+if (room = rDaylightZone) {
+	var coinsTextBackgroundX = (room_width / 2) - (global.halfTileWidth * 2);
+	var coinsTextBackgroundY = global.halfTileHeight;
+	
+	// Drawing the amount of coins owned by the player to the screen.
+	draw_set_color(c_black);
+	draw_set_alpha(0.4);
+	draw_rectangle(coinsTextBackgroundX, coinsTextBackgroundY - 4, coinsTextBackgroundX + (global.halfTileWidth * 4), coinsTextBackgroundY + 24, false);
+	draw_set_color(c_white);
+	draw_set_alpha(1);
+	draw_text(coinsTextBackgroundX + 8, coinsTextBackgroundY, "Coins: " + string(global.playerCoinsOwned));
+}
+
+#endregion

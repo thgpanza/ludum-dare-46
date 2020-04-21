@@ -6,6 +6,7 @@ var towerMap = oGameManager.towers[argument0];
 // The tower's stats.
 name        = towerMap[? "Name"];         // The tower's name.
 price       = towerMap[? "Price"];        // How many corns the tower costs.
+level       = towerMap[? "Level"];        // The tower's level.
 damage      = towerMap[? "Damage"];       // The amount of damage that the turret deals.
 atkSpeed    = towerMap[? "Attack Speed"]; // The stat that influences how fast the turret shoots.
 fireRate    = towerMap[? "Fire Rate"];    // The actual fire rate of the turret.

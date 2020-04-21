@@ -1,6 +1,10 @@
 /// @description Resetting Variables
 
-// Making sure the building shop is closed.
-if (room == rNightZone) {
-	global.isOnBuildingMode = false;
+// Making sure the building shop is closed and the building mark is destroyed.
+if (room == rNightZone || room = rDaylightZone) {
+	if (buildingMark != noone) {
+		instance_destroy(buildingMark);
+	}
+	
+	global.isOnShopMode = false;
 }
