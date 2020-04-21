@@ -1,2 +1,2 @@
-# Ludum Dare 46
-My entry for Ludum Dare 46.
+# Farm Defense
+A tower defense game made for Ludum Dare's 46th edition.
