@@ -39,6 +39,8 @@ The **planting system** works as follows: during the Daylight State the player c
 
 - Press **"Space"** to start the game.
 
+![New_Title_Screen_Screenshot](/Screenshots/New_Title_Screen_Screenshot.png)
+
 #### While in the Daylight State
 
 - Press **“S”** to enter the **“Shop Mode”** and **“1”**, **“2”** or **“3”** to select the desired seed;
@@ -46,11 +48,15 @@ The **planting system** works as follows: during the Daylight State the player c
 - **“Right (Mouse) Click”** on a grown seed to collect it;
 - Press **“N”** to start the next enemy wave.
 
+![New_Daylight_Screenshot](/Screenshots/New_Daylight_Screenshot.png)
+
 #### While in the Night State
 
 - Press **“S”** to enter the **“Shop Mode”** and “1” to select the **“Basic Tower”**;
 - **“Left (Mouse) Click”** to build the selected tower in a non-path tile;
 - **"Right (Mouse) Click"** on a tower to sell it.
+
+![New_Night_Screenshot](/Screenshots/New_Night_Screenshot.png)
 
 #### Postscript
 
