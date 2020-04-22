@@ -7,7 +7,7 @@ I've been wanting to participate in a Ludum Dare since I first discovered it bac
 - First and foremost, I would use **GameMaker Studio 2** on it no matter what, since this was the engine that truly got me into game development (actually the 1.x version but you got the idea).
 - And secondly, I would try my best to have an idea (based on the theme) for a **tower defense game**, because when I was watching a Ludum Dare stream (by Shaun Spalding) for the first time I was also messing with a small tower defense prototype, in GMS 2.
 
-That being said, and knowing that I was heavily inspired by the farm episode of Netflix's series "Love, Death & Robots", here is my first try at this freaking awesome game jam! :D
+That being said, and knowing that I was heavily inspired by the "Suits" episode of Netflix's series "Love, Death & Robots", here is my first try at this freaking awesome game jam! :D
 
 _(It's unfinished (for now) and kinda ugly, but I hope y'all like the idea, heheh)_
 
