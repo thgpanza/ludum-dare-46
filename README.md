@@ -2,7 +2,7 @@
 ## Farm Defense
 ### A minute of history...
 
-I was eager to participate in a Ludum Dare since I first discovered it back in 2017 but I never could, because of college and a recurring appointment that I have on weekends. However this time, "thanks" to the quarantine, I could finally participate in my first one, so I decided that I would use this first Ludum Dare as a dedicatory to myself and my (still small) dev life by doing these two things:
+I've been wanting to participate in a Ludum Dare since I first discovered it back in 2017 but I never could, because of college and a recurring appointment that I have on weekends. However this time, "thanks" to the quarantine, I could finally participate in my first one, so I decided that I would use this first Ludum Dare as a dedicatory to myself and my (still small) dev life by doing these two things:
 
 - First and foremost, I would use **GameMaker Studio 2** on it no matter what, since this was the engine that truly got me into game development (actually the 1.x version but you got the idea).
 - And secondly, I would try my best to have an idea (based on the theme) for a **tower defense game**, because when I was watching a Ludum Dare stream (by Shaun Spalding) for the first time I was also messing with a small tower defense prototype, in GMS 2.
