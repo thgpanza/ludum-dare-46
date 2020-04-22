@@ -45,7 +45,7 @@ The **planting system** works as follows: during the Daylight State the player c
 
 - Press **“S”** to enter the **“Shop Mode”** and **“1”**, **“2”** or **“3”** to select the desired seed;
 - **“Left (Mouse) Click”** to plant the selected seed in the available soil tiles;
-- **“Right (Mouse) Click”** on a grown seed to collect it;
+- **“Right (Mouse) Click”** on a grown seed to harvest (and automatically sell) it;
 - Press **“N”** to start the next enemy wave.
 
 ![New_Daylight_Screenshot](/Screenshots/New_Daylight_Screenshot.png)
