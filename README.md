@@ -7,7 +7,7 @@ I've been wanting to participate in a Ludum Dare since I first discovered it bac
 - First and foremost, I would use **GameMaker Studio 2** on it no matter what, since this was the engine that truly got me into game development (actually the 1.x version but you got the idea).
 - And secondly, I would try my best to have an idea (based on the theme) for a **tower defense game**, because when I was watching a Ludum Dare stream (by Shaun Spalding) for the first time I was also messing with a small tower defense prototype, in GMS 2.
 
-That being said, and knowing that I was heavily inspired by the farm episode of Netflix's series "Love, Death & Robots", here is my first try at this freaking awesome game jam! :D
+That being said, and knowing that I was heavily inspired by the "Suits" episode of Netflix's series "Love, Death & Robots", here is my first try at this freaking awesome game jam! :D
 
 _(It's unfinished (for now) and kinda ugly, but I hope y'all like the idea, heheh)_
 
@@ -45,7 +45,7 @@ The **planting system** works as follows: during the Daylight State the player c
 
 - Press **“S”** to enter the **“Shop Mode”** and **“1”**, **“2”** or **“3”** to select the desired seed;
 - **“Left (Mouse) Click”** to plant the selected seed in the available soil tiles;
-- **“Right (Mouse) Click”** on a grown seed to collect it;
+- **“Right (Mouse) Click”** on a grown seed to harvest (and automatically sell) it;
 - Press **“N”** to start the next enemy wave.
 
 ![New_Daylight_Screenshot](/Screenshots/New_Daylight_Screenshot.png)
