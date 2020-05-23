@@ -3,6 +3,7 @@
 /* INITIALIZING LOCAL VARIABLES */
 
 var kbStartGameKey       = keyboard_check_pressed(vk_space);
+var kbPauseGameKey       = keyboard_check_pressed(vk_escape);
 var kbShopModeKey        = keyboard_check_pressed(ord("S"));
 var kbNexWaveKey         = keyboard_check_pressed(ord("N"));
 var kbMainNumberOneKey   = keyboard_check_pressed(ord("1"));
@@ -10,6 +11,17 @@ var kbMainNumberTwoKey   = keyboard_check_pressed(ord("2"));
 var kbMainNumberThreeKey = keyboard_check_pressed(ord("3"));
 var kbPlaceKey           = mouse_check_button_pressed(mb_left);
 var kbSellKey            = mouse_check_button_pressed(mb_right);
+
+// Pausing/Resuming game.
+if (kbPauseGameKey) {
+	if (!isGamePaused) {
+		instance_deactivate_all(true);
+		isGamePaused = true;
+	} else {
+		instance_activate_all();
+		isGamePaused = false;
+	}
+}
 
 // Setting this object to be persistent across rooms.
 if (!persistent) {
@@ -231,8 +243,7 @@ if (room == rDaylightZone) {
 
 #endregion
 
-
-/* CHANGING ROOMS */
+#region CHANGING ROOMS
 
 // "Starting" the game.
 if (room == rTitleScreen) {
@@ -263,9 +274,12 @@ if (room == rNightZone && global.endNight) {
 	room_goto(rDaylightZone);
 }
 
+#endregion
 
-/* GAME OVER CODE */
+#region GAME OVER CODE
 
 if (global.playerHp <= 0) {
 	game_end();
 }
+
+#endregion

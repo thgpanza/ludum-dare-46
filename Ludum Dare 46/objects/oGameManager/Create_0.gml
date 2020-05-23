@@ -28,6 +28,7 @@ global.seedToPlant = noone;                      // The seed to plant when using
 /* CONTROL VARIABLES */
 
 buildingMark = noone;                            // Building mark instance holder.
+isGamePaused = false;                            // Comment this later...
 
 
 /* DS_MAP DATABASES */
