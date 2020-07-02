@@ -1,6 +1,6 @@
 /// @description Tower AI
 
-/* NEW SYSTEM */
+#region TOWER'S SHOOTING AI
 
 target = noone;
 
@@ -38,3 +38,5 @@ if (instance_exists(oEnemy)) {
 		}
 	}
 }
+
+#endregion

@@ -1,6 +1,6 @@
 /// @description Game Controller
 
-/* INITIALIZING LOCAL VARIABLES */
+#region LOCAL VARIABLES
 
 var kbStartGameKey       = keyboard_check_pressed(vk_space);
 var kbPauseGameKey       = keyboard_check_pressed(vk_escape);
@@ -12,16 +12,9 @@ var kbMainNumberThreeKey = keyboard_check_pressed(ord("3"));
 var kbPlaceKey           = mouse_check_button_pressed(mb_left);
 var kbSellKey            = mouse_check_button_pressed(mb_right);
 
-// Pausing/Resuming game.
-if (kbPauseGameKey) {
-	if (!isGamePaused) {
-		instance_deactivate_all(true);
-		isGamePaused = true;
-	} else {
-		instance_activate_all();
-		isGamePaused = false;
-	}
-}
+#endregion
+
+#region GAME CONTROLLER CONFIGS
 
 // Setting this object to be persistent across rooms.
 if (!persistent) {
@@ -35,8 +28,9 @@ if (room == rNightZone || room == rDaylightZone) {
 	}
 }
 
+#endregion
 
-/* ACTUAL GAME CONTROLLING */
+/* GAME CONTROLLERS */
 
 #region BUILDING MODE (Night Zone)
 
@@ -139,7 +133,6 @@ if (room == rNightZone) {
 
 if (room == rDaylightZone) {
 	
-	
 	/* BUILDING MODE ACTIVATION/DEACTIVATION */
 	
 	if (kbShopModeKey) {
@@ -231,9 +224,9 @@ if (room == rDaylightZone) {
 			if (instanceFound != noone) {
 				if (instanceFound.canHarvest) {
 					global.playerCoinsOwned += instanceFound.coinValue;
+					
+					instance_destroy(instanceFound);
 				}
-			
-				instance_destroy(instanceFound);
 			}
 		}
 	}
@@ -271,7 +264,25 @@ if (room == rNightZone && global.endNight) {
 		instance_destroy(bulletInstance);
 	}
 	
+	// Converting some of the player's corns from the current night to coins.
+	global.playerCoinsOwned += int64(global.playerCornsOwned * global.playerCornsToCoinsValuePercent);
+	global.playerCornsOwned = 0;
+	
 	room_goto(rDaylightZone);
+}
+
+#endregion
+
+#region PAUSE SYSTEM
+
+if (kbPauseGameKey) {
+	if (!isGamePaused) {
+		instance_deactivate_all(true);
+		isGamePaused = true;
+	} else {
+		instance_activate_all();
+		isGamePaused = false;
+	}
 }
 
 #endregion

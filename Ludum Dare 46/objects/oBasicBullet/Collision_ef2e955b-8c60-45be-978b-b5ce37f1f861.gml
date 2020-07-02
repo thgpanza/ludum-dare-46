@@ -1,10 +1,8 @@
 /// @description Hitting the Enemy
 
-event_inherited();
-
 // Decreasing the enemy's hp.
 with (other) {
-	hp -= damage;
+	hp -= other.ownedTowerDamage;
 }
 
 // Destroying the bullet after hitting the enemy.

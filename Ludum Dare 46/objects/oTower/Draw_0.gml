@@ -1,6 +1,7 @@
 /// @description Displaying Tower's Info
 
-// Drawing the turret's range.
+#region DRAWING THE TURRET'S RANGE
+
 if (!global.isOnShopMode) {
 	// Drawing the range as long as the mouse is hovering the turret.
 	var halfSpriteWidth = sprite_width / 2;
@@ -14,6 +15,8 @@ if (!global.isOnShopMode) {
 		draw_circle(x, y, range, false);
 	}
 }
+
+#endregion
 
 // Drawing the tower itself.
 draw_set_alpha(1);

@@ -1,10 +1,14 @@
 /// @description UpdateSeed(seedsMapIndex)
 /// @param seedsMapIndex
 
+/*
+ * Initializes the given seed's variables.
+ */
+
 var seedMap = oGameManager.seeds[argument0];
 
 // The seed's stats.
-name      = seedMap[? "Name"];       // Comment this later...
-price     = seedMap[? "Price"];      // Comment this later...
-growRate  = seedMap[? "Grow Rate"];  // Comment this later...
-coinValue = seedMap[? "Coin Value"]; // Comment this later...
+name      = seedMap[? "Name"];
+price     = seedMap[? "Price"];
+growRate  = seedMap[? "Grow Rate"];
+coinValue = seedMap[? "Coin Value"];

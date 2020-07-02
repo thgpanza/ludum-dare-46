@@ -1,5 +1,22 @@
 /// @description Handling the UI
 
+#region DAYLIGHT ZONE UI
+
+if (room = rDaylightZone) {
+	var coinsTextBackgroundX = (room_width / 2) - (global.halfTileWidth * 2);
+	var coinsTextBackgroundY = global.halfTileHeight;
+	
+	// Drawing the amount of coins owned by the player to the screen.
+	draw_set_color(c_black);
+	draw_set_alpha(0.4);
+	draw_rectangle(coinsTextBackgroundX, coinsTextBackgroundY - 4, coinsTextBackgroundX + (global.halfTileWidth * 4), coinsTextBackgroundY + 24, false);
+	draw_set_color(c_white);
+	draw_set_alpha(1);
+	draw_text(coinsTextBackgroundX + 8, coinsTextBackgroundY, "Coins: " + string(global.playerCoinsOwned));
+}
+
+#endregion
+
 #region NIGHT ZONE UI
 
 if (room = rNightZone) {
@@ -34,24 +51,7 @@ if (room = rNightZone) {
 	draw_rectangle(turnTextX - 12, turnTextY - 4, turnTextX + 90, turnTextY + 24, false);
 	draw_set_color(c_white);
 	draw_set_alpha(1);
-	draw_text(turnTextX, turnTextY, "Turn: " + string(global.turn));
-}
-
-#endregion
-
-#region DAYLIGHT ZONE UI
-
-if (room = rDaylightZone) {
-	var coinsTextBackgroundX = (room_width / 2) - (global.halfTileWidth * 2);
-	var coinsTextBackgroundY = global.halfTileHeight;
-	
-	// Drawing the amount of coins owned by the player to the screen.
-	draw_set_color(c_black);
-	draw_set_alpha(0.4);
-	draw_rectangle(coinsTextBackgroundX, coinsTextBackgroundY - 4, coinsTextBackgroundX + (global.halfTileWidth * 4), coinsTextBackgroundY + 24, false);
-	draw_set_color(c_white);
-	draw_set_alpha(1);
-	draw_text(coinsTextBackgroundX + 8, coinsTextBackgroundY, "Coins: " + string(global.playerCoinsOwned));
+	draw_text(turnTextX, turnTextY, "Turn: " + string(global.turn + 1));
 }
 
 #endregion
