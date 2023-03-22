@@ -57,9 +57,3 @@ The **planting system** works as follows: during the Daylight State the player c
 - **"Right (Mouse) Click"** on a tower to sell it.
 
 ![New_Night_Screenshot](/Screenshots/New_Night_Screenshot.png)
-
-#### Postscript
-
-**PS:** I will **keep working** on this game until my initial idea is **fully complete**, leaving on my itch.io page both the **Jam version** and the **updated version** for download.
-
-**PSS:** As soon as I translate the **Trello board** that I used (and will continue to use) for this game to English I'll also leave the link on my itch.io page for anyone that wants to check the roadmap.
